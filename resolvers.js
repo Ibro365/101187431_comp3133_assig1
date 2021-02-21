@@ -26,12 +26,7 @@ exports.resolvers = {
     Mutation: {
         addHotel: async (parent, args) => {
             console.log(args)
-            //const emailExpression = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-            //const isValidEmail =  emailExpression.test(String(email).toLowerCase())
             
-            //if(!isValidEmail){
-                //throw new Error("email not in proper format")
-            //}
 
             let newHotel = new Hotel({
                 hotel_id: args.hotel_id,
